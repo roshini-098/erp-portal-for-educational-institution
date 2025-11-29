@@ -1,0 +1,93 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #ff6e6e; /* Deep Navy Blue */
+    --accent-color: #eda5a5;  /* Academic Gold */
+    --bg-color: #f4f6f9;      /* Light Gray-Blue Background */
+    --text-dark: #2c3e50;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+}
+
+/* --- Login Screen --- */
+#login-screen {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #283593 100%);
+}
+
+/* --- Navbar --- */
+.navbar {
+    border-top: 5px solid var(--primary-color);
+}
+
+.navbar-brand {
+    color: var(--primary-color) !important;
+}
+
+/* --- Cards --- */
+.card {
+    border: none;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05) !important; /* Subtle, static shadow */
+    transition: none !important; /* DISABLING HOVER ANIMATIONS */
+}
+
+/* Ensure no movement happens on hover */
+.card:hover {
+    transform: none !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05) !important;
+}
+
+/* --- Buttons --- */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #0d165e;
+    border-color: #0d165e;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--primary-color) !important;
+    color: rgba(255,255,255,0.7) !important;
+}
+
+/* --- Profile Dropdown Popup --- */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.dropdown-item {
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Remove default blue link color from profile toggle */
+.nav-link {
+    color: var(--text-dark);
+}
+
+/* --- Cards --- */
+.card {
+    border: none;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05) !important; 
+    transition: none !important;
+    /* overflow: hidden;  <-- REMOVED THIS so dropdowns can be seen */
+}
